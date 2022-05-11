@@ -1,10 +1,30 @@
 :root{
-    --primary: rgb(83, 83, 173)
+    --primary: rgb(83, 83, 173);
+    --secondary: lightblue;
+}
+
+*{
+    color:var(--primary);
 }
 
 header{
-    border: 1px solid red;
     height: 10vh;
+    background-color: var(--primary);
+}
+
+header h1{
+    background-color: var(--secondary);
+    width:30%;
+    margin:0 10px;
+}
+
+span{
+    color:var(--primary);
+    margin:20px
+}
+
+a{
+    color:var(--secondary)
 }
 
 header nav{
@@ -19,12 +39,10 @@ header nav ul li{
 h1{
     font-size:300%;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color:var(--primary);
 }
 
 p{
     margin: 25px 50px;
-    color:var(--primary);
     line-height:25px;
 }
 
@@ -48,12 +66,17 @@ p{
 }
 
 #hero{
-    border: 1px solid black;
     height: 20vh;
+    text-align: center;
+    border-bottom: 5px solid var(--primary);
+}
+
+#hero img{
+    max-width: 100px;
+    margin-top: 25px;
 }
 
 #aboutme{
-    border: 1px solid blue;
     height: 30vh;
     display:flex;
     flex-wrap: wrap;
@@ -64,7 +87,6 @@ p{
 }
 
 #work{
-    border: 1px solid green;
     height: 150vh;
     display:flex;
     flex-wrap: wrap;
@@ -75,7 +97,6 @@ p{
 }
 
 #contactinfo{
-    border: 1px solid indigo;
     height: 20vh;
     display:flex;
     flex-wrap: wrap;
@@ -89,4 +110,5 @@ p{
     flex-basis:100%;
     border:1px solid orange;
     height: 60%;
+    margin-top: 5%;
 }
