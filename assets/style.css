@@ -108,7 +108,7 @@ p{
 
 #bigger-picture{
     flex-basis:100%;
-    border:1px solid orange;
+    margin-top:5%;
     height: 60%;
-    margin-top: 5%;
+    background-image: url("./image/GitHub.webp");
 }
