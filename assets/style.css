@@ -1,0 +1,59 @@
+header{
+    border: 1px solid red;
+    height: 10vh;
+}
+
+header nav{
+    text-align: right;
+    display: inline;
+}
+
+.title{
+    flex-basis:20%;
+    border-right:1px solid darkcyan;
+    text-align: center;
+}
+
+.content{
+    flex-basis:80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.smaller-picture{
+    flex-basis:50%;
+    border:1px solid plum;
+    height: 20vh;
+}
+
+#hero{
+    border: 1px solid black;
+    height: 20vh;
+}
+
+#aboutme{
+    border: 1px solid blue;
+    height: 30vh;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+#work{
+    border: 1px solid green;
+    height: 150vh;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+#contactinfo{
+    border: 1px solid indigo;
+    height: 20vh;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+#bigger-picture{
+    flex-basis:100%;
+    border:1px solid orange;
+    height: 60%;
+}
