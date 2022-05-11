@@ -1,3 +1,7 @@
+:root{
+    --primary: rgb(83, 83, 173)
+}
+
 header{
     border: 1px solid red;
     height: 10vh;
@@ -5,12 +9,22 @@ header{
 
 header nav{
     text-align: right;
+}
+
+header nav ul li{
     display: inline;
+    margin-right:10px;
+}
+
+h1{
+    font-size:300%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:var(--primary);
 }
 
 .title{
     flex-basis:20%;
-    border-right:1px solid darkcyan;
+    border-right:10px solid var(--primary);
     text-align: center;
 }
 
@@ -38,6 +52,10 @@ header nav{
     flex-wrap: wrap;
 }
 
+#AboutH1{
+    margin-top: 100px;
+}
+
 #work{
     border: 1px solid green;
     height: 150vh;
@@ -45,11 +63,19 @@ header nav{
     flex-wrap: wrap;
 }
 
+#WorkH1{
+    margin-top: 500px;
+}
+
 #contactinfo{
     border: 1px solid indigo;
     height: 20vh;
     display:flex;
     flex-wrap: wrap;
+}
+
+#ContactH1{
+    margin-top:75px;
 }
 
 #bigger-picture{
