@@ -1,59 +1,68 @@
+/* Defines some commonly reused colors as variables for ease of access */
+
 :root{
     --primary: rgb(83, 83, 173);
     --secondary: lightblue;
 }
 
+/* Sets font color at the lowest precedence so all text, unless overwritten, is this color */
 *{
     color:var(--primary);
 }
 
+/* Sets the size and background of the header */
 header{
     height: 10vh;
     background-color: black;
 }
 
+/* Sets the margin and width of the h1 within the header */
 header h1{
     width:30%;
     margin:0 10px;
 }
 
+/* Sets the margin and color of h1 within header's text */
 header h1 span{
+    margin: 20px;
     color:turquoise;
 }
 
+/* Aligns the nav links to the right */
 header nav{
     text-align: right;
 }
 
+/* Sets the nav links to display in a row and spaces them apart */
 header nav ul li{
     display: inline;
     margin-right:10px;
 }
 
+/* Sets the section to flex, so children can rely on flex display */
 section {
     display:flex;
     flex-wrap: wrap;
 }
 
-span{
-    color:var(--primary);
-    margin:20px
-}
-
+/* Sets the color for all links */
 a{
     color:var(--secondary)
 }
 
+/* Sets the color and size for all h1s */
 h1{
     font-size:300%;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+/* Sets the margin and line height for all paragraphs */
 p{
     margin: 25px 50px;
     line-height:25px;
 }
 
+/* Sets the width of the columns and text alignment for all titles */
 .title{
     flex-basis:20%;
     border-right:10px solid var(--primary);
@@ -61,32 +70,38 @@ p{
     margin: 20px 0;
 }
 
+/* Sets the width of the content column */
 .content{
     flex-basis:80%;
     display: flex;
     flex-wrap: wrap;
 }
 
+/* Sets section to be a flex parent */
 section{
     display: flex;
     flex-wrap: wrap;
 }
 
+/* Sets this list to be a flex parent */
 .content ul{
     display:flex;
     flex-wrap: wrap;
 }
 
+/* Sets this list's font size and makes it display in a spaced out row */
 .content ul li{
     font-size: 200%;
     display: inline;
     margin: 50px;
 }
 
+/* Overwrites the color of these links to be primary */
 .content ul li a{
     color:var(--primary);
 }
 
+/* Sets the background image and size for the Horiseon picture */
 .horiseon{
     background-image: url("./image/Horiseon.PNG");
     justify-content:stretch;
@@ -95,6 +110,7 @@ section{
     height: 20vh;
 }
 
+/* Sets the size and placeholder pic for the smaller, undefined pics. These will be updated as more projects are delpoyed. :) */
 .smaller-picture{
     flex-basis:50%;
     height: 20vh;
@@ -102,6 +118,7 @@ section{
     background-repeat: no-repeat;
 }
 
+/* Sets the size and background of the banner */
 #hero{
     height: 20vh;
     text-align: center;
@@ -109,45 +126,54 @@ section{
     background-image: url(./image/hero-bg.png);
 }
 
+/* Sets the size and margin for my face */
 #hero img{
     max-width: 100px;
     margin-top: 25px;
 }
 
+/* Overwrites the caption to white text */
 #hero figcaption {
     color:white;
 }
 
+/* Sets the size of the about me section */
 #aboutme{
     height: 30vh;
     display:flex;
     flex-wrap: wrap;
 }
 
+/* Sets the margin for the about me h1 */
 #AboutH1{
     margin-top: 75px;
 }
 
+/* Sets the size of the work section */
 #work{
     height: 150vh;
     display:flex;
     flex-wrap: wrap;
 }
 
+/* sets the margin for the work h1 */
 #WorkH1{
     margin-top: 500px;
 }
 
+/* Sets the size of the contact info section */
 #contactinfo{
     height: 20vh;
     display:flex;
     flex-wrap: wrap;
 }
 
+/* Sets the margin for the contact h1 */
 #ContactH1{
     margin-top:50px;
 }
 
+/* Sets the background image and size for the biggest picture */
 #bigger-picture{
     flex-basis:100%;
     margin-top:5%;
@@ -155,6 +181,7 @@ section{
     background-image: url("./image/GitHub.jpg");
 }
 
+/* Changes sizes based on screen resolution to make mobile responsiveness possible. Also cuts out some unnecessary content from mobile displays. */
 @media screen and (max-width: 768px) {  
     span, .smaller-picture, #hero img, #hero figcaption{
         display:none;
