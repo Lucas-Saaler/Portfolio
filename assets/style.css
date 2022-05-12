@@ -9,22 +9,16 @@
 
 header{
     height: 10vh;
-    background-color: var(--primary);
+    background-color: black;
 }
 
 header h1{
-    background-color: var(--secondary);
     width:30%;
     margin:0 10px;
 }
 
-span{
-    color:var(--primary);
-    margin:20px
-}
-
-a{
-    color:var(--secondary)
+header h1 span{
+    color:turquoise;
 }
 
 header nav{
@@ -34,6 +28,20 @@ header nav{
 header nav ul li{
     display: inline;
     margin-right:10px;
+}
+
+section {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+span{
+    color:var(--primary);
+    margin:20px
+}
+
+a{
+    color:var(--secondary)
 }
 
 h1{
@@ -59,21 +67,35 @@ p{
     flex-wrap: wrap;
 }
 
+.horiseon{
+    background-image: url("./image/Horiseon.PNG");
+    justify-content:stretch;
+    background-repeat: no-repeat;
+    flex-basis:50%;
+    height: 20vh;
+}
+
 .smaller-picture{
     flex-basis:50%;
-    border:1px solid plum;
     height: 20vh;
+    background-image: url(./image/ComingSoon.png);
+    background-repeat: no-repeat;
 }
 
 #hero{
     height: 20vh;
     text-align: center;
     border-bottom: 5px solid var(--primary);
+    background-image: url(./image/hero-bg.png);
 }
 
 #hero img{
     max-width: 100px;
     margin-top: 25px;
+}
+
+#hero figcaption {
+    color:white;
 }
 
 #aboutme{
@@ -110,5 +132,5 @@ p{
     flex-basis:100%;
     margin-top:5%;
     height: 60%;
-    background-image: url("./image/GitHub.webp");
+    background-image: url("./image/GitHub.jpg");
 }
