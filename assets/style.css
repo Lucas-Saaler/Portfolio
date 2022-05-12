@@ -67,6 +67,26 @@ p{
     flex-wrap: wrap;
 }
 
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content ul{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.content ul li{
+    font-size: 200%;
+    display: inline;
+    margin: 50px;
+}
+
+.content ul li a{
+    color:var(--primary);
+}
+
 .horiseon{
     background-image: url("./image/Horiseon.PNG");
     justify-content:stretch;
@@ -133,4 +153,32 @@ p{
     margin-top:5%;
     height: 60%;
     background-image: url("./image/GitHub.jpg");
+}
+
+@media screen and (max-width: 768px) {  
+    span, .smaller-picture, #hero img, #hero figcaption{
+        display:none;
+    }
+    p{
+        font-size:10%;
+        margin:20px 0 0 10px;
+        line-height: 10px;
+    }
+    .horiseon{
+        flex-basis:100%;
+    }
+    #bigger-picture, .horiseon{
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .horiseon h1{
+        font-size:100%;
+    }
+    .title{
+        font-size:25%;
+    }
+    #ContactList{
+        height:25vh;
+        font-size:25%;
+    }
 }
